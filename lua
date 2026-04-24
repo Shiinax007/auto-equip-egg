@@ -10,7 +10,7 @@ if _G.AutoProteinEgg ~= nil then
 else
     _G.AutoProteinEgg = true
 end
-print("Auto Protein Egg " .. (_G.AutoProteinEgg and "ACTIVADO ✅" or "DESACTIVADO ❌"))
+print("Auto Protein Egg " .. (_G.AutoProteinEgg and "ทำงาน" or "หยุดทำงาน"))
 
 
 local character = player.Character or player.CharacterAdded:Wait()
@@ -106,5 +106,5 @@ task.spawn(function()
         equipIfNeeded()
         task.wait(0.5)
     end
-    print("Auto Protein Egg DESACTIVADO")
+    print("Auto egg หยุดทำงาน")
 end)
